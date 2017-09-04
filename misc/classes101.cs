@@ -6,25 +6,6 @@ using System.Threading.Tasks;
 
 namespace dummy
 {
-    class Car
-    {
-        private int Born = 2016;
-        private string Make = "Honda";
-        private string Country = "Japan";
-
-        public Car() { }
-        public Car(int born, string make, string country)
-        {
-            Born = born;
-            Make = make;
-            Country = country;
-        }
-
-        public string GetInfo()
-        {
-            return this.Make + ", " + this.Country;
-        }
-    }
 
     class Program
     {
