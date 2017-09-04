@@ -22,9 +22,9 @@ namespace dummy
 
             Console.WriteLine(cars.Count);
 
-            foreach(var car in cars)
+            foreach (var car in cars)
             {
-                Console.WriteLine(((Car)car).Born);
+                Console.WriteLine(car);
             }
 
             Console.ReadLine();
@@ -34,6 +34,10 @@ namespace dummy
     class Car
     {
         public int Born { get; set; }
+        public override string ToString()
+        {
+            return "Manufactured in " + Born;
+        }
     }
 
 }
